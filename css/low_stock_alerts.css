@@ -1,0 +1,12 @@
+.main_content span{
+    color: red;
+}
+
+table td{
+    height: 40px;
+}
+
+.operating_buttons{
+    display: block;
+    margin: 30px auto;
+}
