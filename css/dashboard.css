@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(to right, rgb(255, 255, 255), #dfeeff);
+}
+
+.main_content h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.main_content h2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #666;
+}
+
+/* left line */
+.main_content h2::before,
+.main_content h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+
+/* spacing between text and lines */
+.main_content h2::before {
+    margin-right: 10px;
+}
+
+.main_content h2::after {
+    margin-left: 10px;
+}
+
+.dashboard_content {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dashboard_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 250px;
+    height: 130px;
+
+    background: #efefef;
+    border: 1px solid #6b6b6b;
+    border-radius: 2px;
+
+    text-decoration: none;
+    color: #111;
+
+    cursor: pointer;
+}
+
+.dashboard_buttons i{
+    font-size: 40px;
+    color: #000;
+}
+
+.dashboard_buttons span{
+    font-size: 15px;
+    font-weight: 500;
+}
